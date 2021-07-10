@@ -8,8 +8,10 @@ jobs:
 
         - name: Build
           uses: docker://amazoncorretto:8
-          run: ./gradlew assemble
+          with:
+            entrypoint: ./gradlew assemble
 
         - name: Test
           uses: docker://amazoncorretto:8
-          run: ./gradlew test
+          with:
+            entrypoint: ./gradlew test
