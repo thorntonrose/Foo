@@ -1,0 +1,16 @@
+on: push
+jobs:
+   job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v2
+        - name: Setup Java
+          uses: actions/setup-java@v2
+          with:
+            distribution: zulu
+            java-version: "11"
+        - name: Build
+          run: ./gradlew assemble
+        - name: Test
+          run: ./gradlew test
