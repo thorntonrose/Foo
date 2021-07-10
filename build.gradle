@@ -1,0 +1,16 @@
+group = "foo"
+version = "0.1.0"
+apply plugin: "groovy"
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	compile "org.codehaus.groovy:groovy-all:2.5.10"
+	testCompile "junit:junit:4.13.2"
+}
+
+test {
+	testLogging { events "passed", "skipped", "failed" }
+}
