@@ -1,0 +1,19 @@
+on: push
+jobs:
+   job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v2
+
+        - name: Build
+          uses: docker://amazoncorretto:8
+          with:
+            entrypoint: /github/workspace/gradlew
+            args: assemble
+
+        - name: Test
+          uses: docker://amazoncorretto:8
+          with:
+            entrypoint: /github/workspace/gradlew
+            args: test
