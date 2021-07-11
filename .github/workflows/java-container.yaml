@@ -2,7 +2,7 @@ on: push
 jobs:
    job:
       runs-on: ubuntu-latest
-      container: azul/zulu-openjdk-alpine:8
+      container: azul/zulu-openjdk-debian:8
       steps:
         - name: Checkout
           uses: actions/checkout@v2
