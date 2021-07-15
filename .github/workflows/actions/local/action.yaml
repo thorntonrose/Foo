@@ -1,0 +1,7 @@
+name: local
+description: local
+runs:
+  using: composite
+  steps:
+    - run: echo "local"
+      shell: bash

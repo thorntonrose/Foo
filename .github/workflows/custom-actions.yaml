@@ -1,6 +1,7 @@
 on: push
 jobs:
-   custom-action:
+   custom-actions:
       runs-on: ubuntu-latest
       steps:
         - uses: thorntonrose/Action@master
+        - uses: ./github/actions/local
