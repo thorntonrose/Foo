@@ -1,6 +1,6 @@
 on: push
 jobs:
-   custom-yaml:
+   custom-action:
       runs-on: ubuntu-latest
       steps:
-        - uses: trose/Action@master
+        - uses: thorntonrose/Action@master
