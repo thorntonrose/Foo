@@ -3,4 +3,4 @@ jobs:
    custom-yaml:
       runs-on: ubuntu-latest
       steps:
-        - uses: trose/Action
+        - uses: trose/Action@master
