@@ -3,5 +3,6 @@ jobs:
    custom-actions:
       runs-on: ubuntu-latest
       steps:
+        - uses: actions/Checkout@v2
         - uses: thorntonrose/Action@master
         - uses: ./github/actions/local
