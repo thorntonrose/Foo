@@ -1,6 +1,6 @@
 on: push
 jobs:
-   job:
+   java-container:
       runs-on: ubuntu-latest
       container: azul/zulu-openjdk-debian:8
       steps:
