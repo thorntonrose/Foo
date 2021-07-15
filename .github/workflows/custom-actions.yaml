@@ -5,4 +5,4 @@ jobs:
       steps:
         - uses: actions/Checkout@v2
         - uses: thorntonrose/Action@master
-        - uses: ./github/actions/local
+        - uses: .github/actions/local
